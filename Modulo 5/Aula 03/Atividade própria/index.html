@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+
+        @keyframes ping-pong {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(250px);
+            }
+        }
+
+        
+
+        div.container {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: 90vw;
+        }
+
+        div.animation {
+            animation-name: ping-pong;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-duration: .8s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+
+            
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="animation"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.transition {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 30px;
+            width: 230px;
+            height: 80px;
+            transition-duration: 1.5s;
+            transition-property: background-color, transform;
+            transition-timing-function: ease-in-out;
+
+            background-color: red;
+            color: white;
+            font-weight: bolder;
+        }
+
+        div.transition:hover {
+            background-color: blue;
+            transform: rotate(360deg);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="transition">Passe o mouse aqui!</div>
+</body>
+</html>
